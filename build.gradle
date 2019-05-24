@@ -4,10 +4,10 @@ plugins {
 	id "com.gradle.plugin-publish" version "0.10.1"
 }
 
-version = '1.0.1'
+version = '1.0.2'
 
 pluginBundle {
-	website = 'https://github.com/andreasbisiach/gradle-gitversion-plugin
+	website = 'https://github.com/andreasbisiach/gradle-gitversion-plugin'
 	vcsUrl = 'https://github.com/andreasbisiach/gradle-gitversion-plugin.git'
 	tags = ['gitversion', 'git', 'semver', 'version', 'plugins']
 }
