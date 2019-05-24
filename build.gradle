@@ -1,0 +1,24 @@
+plugins {
+	id 'java-gradle-plugin'
+	id 'groovy'
+	id "com.gradle.plugin-publish" version "0.10.1"
+}
+
+version = '1.0.1'
+
+pluginBundle {
+	website = 'https://github.com/andreasbisiach/gradle-gitversion-plugin
+	vcsUrl = 'https://github.com/andreasbisiach/gradle-gitversion-plugin.git'
+	tags = ['gitversion', 'git', 'semver', 'version', 'plugins']
+}
+
+gradlePlugin {
+	plugins {
+		gitVersionPlugin {
+			id = 'com.bisiach.gradle.gitversion-plugin'
+			displayName = 'Wrapper plugin for GitVersion'
+			description = 'Makes available all GitVersion properties to the gradle build (i.e. GitVersion.SemVer). Run task GitVersion for a list of all properties. Requires GitVersion installed'
+			implementationClass = 'com.bisiach.gradle.gitversion.GitVersionPlugin'
+		}
+	}
+}
